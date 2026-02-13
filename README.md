@@ -1,79 +1,70 @@
-# Valentine Website
+// Basic Information
+valentineName: "Sanvi"                    // Your Valentine's name
+pageTitle: "Will You Be My Valentine? 💝" // Browser tab title
 
-A valentine website for your bae. <br>
-This project gives you a template to use and edit for your valentine website instead of building one from scratch <br>
+// Floating Background Elements
+floatingEmojis: {
+    hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis in background
+    bears: ['🧸', '🐻']                       // Bear emojis in background
+}
 
-Edit the *'script.js'* file to customize the message and *'send_mail.php'* file to send an email from your email address.
+// Questions and Buttons
+questions: {
+    first: {
+        text: "Do you like me?",                   // First question
+        yesBtn: "Yes",                             // Yes button text
+        noBtn: "No",                               // No button text
+        secretAnswer: "I don't like you, I love you! ❤️"  // Hidden message
+    },
+    second: {
+        text: "How much do you love me?",          // Second question
+        startText: "This much!",                   // Text before percentage
+        nextBtn: "Next ❤️"                         // Next button text
+    },
+    third: {
+        text: "Will you be my Valentine...?",      // Final question
+        yesBtn: "Yes!",                            // Yes button text
+        noBtn: "No"                                // No button text
+    }
+}
 
-## 
+// Love Meter Messages
+loveMessages: {
+    extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows above 5000%
+    high: "To infinity and beyond! 🚀💝",              // Shows above 1000%
+    normal: "And beyond! 🥰"                           // Shows above 100%
+}
 
-This project is based on [in-all-the-stars](https://github.com/KalDrongo/in-all-the-stars), created by [KalDrongo](https://github.com/KalDrongo). 
+// Final Celebration
+celebration: {
+    title: "Yay! I'm the luckiest person...",     // Celebration title
+    message: "Now come get your gift...",          // Celebration message
+    emojis: "🎁💖🤗💝💋❤️💕"                        // Celebration emojis
+}
 
-*Features added:*
+// Website Colors
+colors: {
+    backgroundStart: "#ffafbd",      // Background gradient start
+    backgroundEnd: "#ffc3a0",        // Background gradient end
+    buttonBackground: "#ff6b6b",     // Button color
+    buttonHover: "#ff8787",          // Button hover color
+    textColor: "#ff4757"            // Text color
+}
 
-- background stars blinking
-- cursor change
-- mobile responsiveness
-- send email functionality
-- text glow effect
+// Animation Settings
+animations: {
+    floatDuration: "15s",           // How long hearts float (10-20s)
+    floatDistance: "50px",          // Sideways movement (30-70px)
+    bounceSpeed: "0.5s",            // Bounce animation speed (0.3-0.7s)
+    heartExplosionSize: 1.5         // Final heart explosion size (1.2-2.0)
+}
 
-## ⚒️ Languages / Library
-- HTML
-- CSS
-- Javascript
-- PHP
-- [PHPMailer](https://github.com/PHPMailer/PHPMailer)
-
-
-## 💻 Demo
-
-Check out the demo website: [Valentine-website](https://sojijr.github.io/valentine-website/)
-
-## How to use
-Click [`Use this template`](https://github.com/sojijr/valentine-website/generate) and it will create a new repo not a fork with all the files of this project for you.
-
-![image](https://user-images.githubusercontent.com/78784850/198232353-35fa6d2f-5816-4818-9381-a5bf394b146a.png)
-
-## Prerequisites to use 👇🏽
-- [Composer](https://getcomposer.org/) - to use
-before installation, please make sure you have it already installed.
-
-## 🛠️ Installation Steps
-
-1. After generating a new repo using this template, clone the project, you can use the following command:
-
-```bash
-git clone https://github.com/<your-github-username>/valentine-website
-```
-
-2. Move the cloned repository to Xampp/htdocs or wamp64/www <br>
-
-3. Navigate to the project directory
-
-```bash
-cd Xampp/htdocs/valentine-website or wamp64/www/valentine-website
-```
-
-4. Install dependencies with composer install
-
-```bash
-composer install
-```
-
-5. Run the project by entering the URL below on your browser to run it
-
-```bash
-http://localhost/valentine-website/
-```
-
-## 👩🏽‍💻 Contributing
-
-Any contributions you make are greatly appreciated.
-
-## 🛡️ License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏🏽 Support
-
-This project needs a star️ from you. Don't forget to star it✨
+// Music Settings
+music: {
+    enabled: true, // Music feature is enabled
+    autoplay: true, // Try to autoplay (note: some browsers may block this)
+    musicUrl: "YOUR_CLOUDINARY_URL_HERE", // Paste your music URL here
+    startText: "🎵 Play Music", // Button text to start music
+    stopText: "🔇 Stop Music", // Button text to stop music
+    volume: 0.5 // Volume level (0.0 to 1.0)
+}
